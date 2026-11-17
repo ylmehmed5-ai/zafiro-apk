@@ -15,6 +15,11 @@ jobs:
     - name: Zip Dosyasini Cikart
       run: unzip -q zafiro-19-1.11.0.zip -d proje_klasoru
 
+    - name: Python 3.11 Kur
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
     - name: Java JDK 17 Kur
       uses: actions/setup-java@v4
       with:
